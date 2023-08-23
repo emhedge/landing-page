@@ -12,8 +12,6 @@ body {
     flex-direction: row;
     flex: 1 1 auto;
     padding: 16px 164px;
-    margin-left: 8px;
-    gap: 128px;
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
@@ -29,6 +27,7 @@ body {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    margin-left: 8px;
 }
 
 .links {
@@ -151,10 +150,40 @@ img {
     font-style: light-italic;
     color:#1f2937;
     background-color: #E5E7EB;
+    flex: display;
+    flex-direction: column;
+    padding: 64px 164px;
+}
+
+.div-quote {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.div-quotee {
+    font-weight: 800;
+    text-align: right;
+}
+
+.call-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 164px;
+}
+/* start here tomorrow, work on the margins, font size of call box. */
+.call-box {
+    padding: 32px 64px;
+    color:#F9FAF8;
+}
+
+.call-content {
+    display:flex;
+    gap: 32px;
 }
 
 button,
-.call {
+.call-box {
     background-color: #3882F6;
     border-radius: 5px;
 }
