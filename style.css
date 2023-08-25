@@ -158,22 +158,11 @@ img {
     color:#1f2937;
     background-color: #E5E7EB;
     display: flex;
+    flex: 1 1 100%;
     flex-direction: column;
     align-items: right;
     justify-content: right;
     padding: 64px 164px;
-    /* flex-wrap: wrap; */
-}
-
-.div-quote {
-    font-weight: 300;
-    font-style: italic;
-}
-
-.div-quotee {
-    font-weight: 800;
-    font-size: 28px;
-    /* justify-content: flex-end; */
 }
 
 .call-div {
@@ -182,7 +171,7 @@ img {
     align-items: center;
     padding: 64px 164px;
 }
-/* start here tomorrow, work on the margins, font size of call box. */
+
 .call-box {
     padding: 32px 64px;
     color:#F9FAF8;
@@ -209,7 +198,7 @@ button,
 }
 
 h3 {
-    
+    margin-block-start: 0;
     margin-bottom: 4px;
 }
 
@@ -230,6 +219,16 @@ button {
     justify-content: center;
     align-items: center;
     min-height: 72px;
+}
+
+.secondary {
+    color: #E5E7EB;
+    font-weight: 300;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 ul {
