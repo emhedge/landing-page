@@ -37,6 +37,7 @@ body {
 .hero {
     background-color: #1f2937;
     min-width: 800px;
+    display: flex;
     flex-direction: column;
     flex: 1 1 0;
 }
@@ -125,16 +126,18 @@ img {
     justify-content: center;
     align-items: center;
     flex-basis: 200px;
+    margin: 0 16px;
 }
 
 .box {
     display: flex;
     flex: 1 1 200;
     /* min-height: 200px; */
-    background: red;
-    width: 200px;
-    height: 200px;
-    border: 6px black;
+    background: none;
+    width: 175px;
+    height: 175px;
+    border: 4px #3882F6;
+    border-style: solid;
     border-radius: 10px;
     margin-bottom: 16px;
 } 
@@ -142,18 +145,24 @@ img {
 .item-text {
     color:#1f2937;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 190px;
+    margin-block-start: 0;
 }
 
-
+/* Don't like how the quote section is too wide and also doesn't flex like the info boxes and call to action box. */
 .quote {
     font-size: 36px;
     font-style: light-italic;
     color:#1f2937;
     background-color: #E5E7EB;
-    flex: display;
+    display: flex;
     flex-direction: column;
+    align-items: right;
+    justify-content: right;
     padding: 64px 164px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .div-quote {
@@ -163,7 +172,8 @@ img {
 
 .div-quotee {
     font-weight: 800;
-    text-align: right;
+    font-size: 28px;
+    /* justify-content: flex-end; */
 }
 
 .call-div {
@@ -189,7 +199,7 @@ img {
     flex-direction: column;
     display: flex;
     align-items: left;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 button,
@@ -210,7 +220,7 @@ button {
     color: #F9FAF8;
     font-size: 18px;
     border-color: #E5E7EB;
-    
+    flex-shrink: 0;
 }
 
 .footer {
