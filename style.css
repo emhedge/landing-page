@@ -153,6 +153,7 @@ img {
     flex: display;
     flex-direction: column;
     padding: 64px 164px;
+    flex-wrap: wrap;
 }
 
 .div-quote {
@@ -175,11 +176,20 @@ img {
 .call-box {
     padding: 32px 64px;
     color:#F9FAF8;
+    
 }
 
 .call-content {
     display:flex;
     gap: 32px;
+    align-items: center;
+}
+
+.call-text {
+    flex-direction: column;
+    display: flex;
+    align-items: left;
+    justify-content: center;
 }
 
 button,
@@ -188,11 +198,19 @@ button,
     border-radius: 5px;
 }
 
+h3 {
+    
+    margin-bottom: 4px;
+}
+
 button {
     padding: 6px 16px;
     max-width: 128px;
+    max-height: 37px;
     color: #F9FAF8;
     font-size: 18px;
+    border-color: #E5E7EB;
+    
 }
 
 .footer {
